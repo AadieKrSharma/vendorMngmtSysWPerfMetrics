@@ -1,6 +1,7 @@
-from django.urls import path
+from django.urls import path, include
 from api import views
 
 urlpatterns = [
-    path('data', views.getData),
+    path('vendors/', include('vendorProfileMngmnt.urls')),
+    path('purchase_orders/', include('purchaseOrdrMngmnt.urls'))
 ]

@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "\\\\wsl.localhost\\Ubuntu\\home\\aadie\\Code\\vendorMngmtSysWPerfMetrics\\db.sqlite3",
+            "name": "VMMS"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
