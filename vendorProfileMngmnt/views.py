@@ -9,9 +9,9 @@ class VendorList(generics.ListCreateAPIView):
 
     def get_queryset(self):
         queryset = Vendor.objects.all()
-        vendor = self.request.query_params.get('vendor_id')
+        vendor = self.request.query_params.get('vendor_code')
         if vendor is not None:
-            queryset = queryset.filter(vendor_id=vendor)
+            queryset = queryset.filter(vendor_code=vendor)
         return queryset
 
 

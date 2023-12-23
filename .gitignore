@@ -1,3 +1,4 @@
 data.txt
 venv
 .env
+db.sqlite3
